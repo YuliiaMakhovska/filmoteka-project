@@ -1,0 +1,67 @@
+<div class="backdrop is-hidden" data-loginmodal>
+  <div class="modal modal-login">
+    <button type="button" class="modal-close__button" data-loginmodal-close>
+      <svg width="30" height="30">
+        <use
+          href="/src/images/svg/icons.svg#close-modal-btn"
+          class="modal-close__icon"
+        ></use>
+      </svg>
+    </button>
+    <p class="modal__title lng-logintitle">Log in</p>
+    <form action="#" class="modal__form" id="form-sign-in">
+      <div class="modal__field">
+        <label for="email">Email</label>
+        <div class="modal__input-wrap">
+          <input
+            type="email"
+            name="user-email"
+            id="email"
+            class="modal__input email-input"
+            placeholder="Email"
+            required="required"
+          />
+          <svg class="form-icon" width="15" height="12">
+            <use href="./images/svg/icons.svg#icon-email" class="login-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal__field">
+        <label for="tel">Password</label>
+        <div class="modal__input-wrap">
+          <input
+            type="tel"
+            name="user-tel"
+            id="password"
+            class="modal__input password-input"
+            required="required"
+            placeholder="Password"
+          
+          />
+          <svg class="form-icon" width="15" height="12">
+            <use href="./images/svg/icons.svg#icon-lock" class="login-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <button type="submit" class="button modal-login__button lng-loginmodal" data-modal-login id="log-in-btn">
+        Log In
+      </button>
+      <p class="sign-up-text">Don't have an account?</p>
+      <button
+        type="submit"
+        class="button modal-login__button lng-signin"
+        id="sign-up-btn"
+        data-modal-signup> Sign Up
+      </button>
+      <button
+        type="button"
+        class="button modal-login__button lng-authorise"
+        data-modal-google-auth
+      >
+        Google Authorise
+      </button>
+    </form>
+  </div>
+</div>
+
+
